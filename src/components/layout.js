@@ -9,6 +9,7 @@ import * as React from "react"
 import PropTypes from "prop-types"
 import ParticlesBackground from "./particle-background"
 import Footer from "./footer"
+import Header from "./header"
 // import { useStaticQuery, graphql } from "gatsby"
 
 const Layout = ({ children }) => {
@@ -25,6 +26,7 @@ const Layout = ({ children }) => {
   return (
     <>
        <div className="flex flex-col min-h-screen relative">
+        <Header/>
         {children}
         <Footer/>
         <ParticlesBackground/>

@@ -7,12 +7,12 @@ import { Link } from "gatsby"
 const headerMenuNames = ['Skills','Portfolio','Blog','About'];
 const HeaderMenuItem = React.memo(({headerMenuName}) => {
   const url = headerMenuName.toLowerCase();
-  return <Link activeClassName="bg-gray-700" to={`/${url}`} className="hover:bg-gray-700 text-white px-3 py-2 rounded-md text-sm font-medium focus:bg-gray-700">{headerMenuName}</Link>
+  return <Link activeClassName="bg-gray-700" to={`/${url}`} className="hover:bg-gray-700 text-white px-3 py-2 rounded-md text-lg font-lg font-bold focus:bg-gray-700 font-mono tracking-wide">{headerMenuName}</Link>
 });
 
 const HeaderMenuItemMobile = React.memo(({headerMenuName}) => {
   const url = headerMenuName.toLowerCase();
-  return <Link activeClassName="bg-gray-700" to={`/${url}`} className="text-gray-300 hover:bg-gray-700 hover:text-white block px-3 py-2 rounded-md text-base font-medium">{headerMenuName}</Link>
+  return <Link activeClassName="bg-gray-700" to={`/${url}`} className="text-gray-300 hover:bg-gray-700 hover:text-white block px-3 py-2 rounded-md font-bold text-base font-mono tracking-wide">{headerMenuName}</Link>
 });
 
 const Header = () => {

@@ -25,11 +25,12 @@ const Layout = ({ children }) => {
 
   return (
     <>
-       <div className="flex flex-col min-h-screen relative">
-        <Header/>
-        {children}
-        <Footer/>
-        <ParticlesBackground/>
+      <div className="flex flex-col min-h-screen relative">
+        <Header />
+        <main className="z-10">{children}</main>
+
+        <Footer />
+        <ParticlesBackground />
       </div>
     </>
   )

@@ -94,7 +94,7 @@ const Header = () => {
           leaveFrom="opacity-100 scale-100"
           leaveTo="opacity-0 scale-95"
         >
-            <div className="md:hidden" id="mobile-menu">
+            <div className="md:hidden z-50 bg-gray-700" id="mobile-menu">
               <div className="px-2 pt-2 pb-3 space-y-1 sm:px-3">
               {headerMenuNames.map((headerMenuName,i) => (
                     <HeaderMenuItemMobile headerMenuName={headerMenuName} key={i}/>

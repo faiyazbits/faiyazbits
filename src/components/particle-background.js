@@ -127,11 +127,10 @@ const Particles = () => {
     },
     retina_detect: true,
     fpsLimit: 60,
-    // 3m@62^K^88745%
   };
 
   return (
-    <div  style={particleContainerStyles} className="absolute bg-black bg-no-repeat bg-cover bg-center">
+    <div  style={particleContainerStyles} className="absolute bg-white dark:bg-black bg-no-repeat bg-cover bg-center">
       <ReactParticles width='100vw' height='100vh' options={OPTIONS} />
     </div>
   );

@@ -2,18 +2,35 @@ import * as React from "react"
 import PropTypes from "prop-types"
 import { Transition } from "@headlessui/react"
 import { Link } from "gatsby"
+import { StaticImage } from "gatsby-plugin-image"
+import CustomThemeToggler from "./theme-toggler"
 
+const headerMenuNames = ["Skills", "Portfolio", "Blog", "About"]
+const HeaderMenuItem = React.memo(({ headerMenuName }) => {
+  const url = headerMenuName.toLowerCase()
+  return (
+    <Link
+      activeClassName="bg-gray-700"
+      to={`/${url}`}
+      className="hover:bg-gray-700 text-black dark:text-white px-3 py-2 rounded-md text-lg font-lg font-bold focus:bg-gray-700 font-mono tracking-wide"
+    >
+      {headerMenuName}
+    </Link>
+  )
+})
 
-const headerMenuNames = ['Skills','Portfolio','Blog','About'];
-const HeaderMenuItem = React.memo(({headerMenuName}) => {
-  const url = headerMenuName.toLowerCase();
-  return <Link activeClassName="bg-gray-700" to={`/${url}`} className="hover:bg-gray-700 text-white px-3 py-2 rounded-md text-lg font-lg font-bold focus:bg-gray-700 font-mono tracking-wide">{headerMenuName}</Link>
-});
-
-const HeaderMenuItemMobile = React.memo(({headerMenuName}) => {
-  const url = headerMenuName.toLowerCase();
-  return <Link activeClassName="bg-gray-700" to={`/${url}`} className="text-gray-300 hover:bg-gray-700 hover:text-white block px-3 py-2 rounded-md font-bold text-base font-mono tracking-wide">{headerMenuName}</Link>
-});
+const HeaderMenuItemMobile = React.memo(({ headerMenuName }) => {
+  const url = headerMenuName.toLowerCase()
+  return (
+    <Link
+      activeClassName="bg-gray-700"
+      to={`/${url}`}
+      className=" text-black dark:text-gray-300 hover:bg-gray-700 hover:text-white block px-3 py-2 rounded-md font-bold text-base font-mono tracking-wide"
+    >
+      {headerMenuName}
+    </Link>
+  )
+})
 
 const Header = () => {
   const [isOpen, setIsOpen] = React.useState(false)
@@ -24,20 +41,23 @@ const Header = () => {
           <div className="flex items-center justify-between h-16">
             <div className="flex items-center">
               <div className="flex-shrink-0">
-                <img
-                  className="h-8 w-8"
-                  src="https://tailwindui.com/img/logos/workflow-mark-indigo-500.svg"
-                  alt="Workflow"
-                />
+                <Link to="/" className="cursor-pointer">
+                  <StaticImage
+                    className="h-8 w-8 rounded-full"
+                    src="../images/self.jpg"
+                    alt="profile pic"
+                  />
+                </Link>
               </div>
               <div className="hidden md:block">
                 <div className="ml-10 flex items-baseline space-x-4">
-                  {headerMenuNames.map((headerMenuName,i) => (
-                    <HeaderMenuItem headerMenuName={headerMenuName} key={i}/>
+                  {headerMenuNames.map((headerMenuName, i) => (
+                    <HeaderMenuItem headerMenuName={headerMenuName} key={i} />
                   ))}
                 </div>
               </div>
             </div>
+            <CustomThemeToggler/>
             <div className="-mr-2 flex md:hidden">
               <button
                 type="button"
@@ -94,13 +114,13 @@ const Header = () => {
           leaveFrom="opacity-100 scale-100"
           leaveTo="opacity-0 scale-95"
         >
-            <div className="md:hidden z-50 bg-gray-700" id="mobile-menu">
-              <div className="px-2 pt-2 pb-3 space-y-1 sm:px-3">
-              {headerMenuNames.map((headerMenuName,i) => (
-                    <HeaderMenuItemMobile headerMenuName={headerMenuName} key={i}/>
+          <div className="md:hidden z-50 bg-gray-700" id="mobile-menu">
+            <div className="px-2 pt-2 pb-3 space-y-1 sm:px-3">
+              {headerMenuNames.map((headerMenuName, i) => (
+                <HeaderMenuItemMobile headerMenuName={headerMenuName} key={i} />
               ))}
-              </div>
             </div>
+          </div>
         </Transition>
       </nav>
     </header>

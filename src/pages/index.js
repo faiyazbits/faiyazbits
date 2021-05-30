@@ -8,7 +8,7 @@ import Seo from "../components/seo"
 
 const indexStyles = {
   section: {
-    minHeight: "75vh",
+    minHeight: "96vh",
   },
   container: {
     maxWidth: "94%",
@@ -17,7 +17,7 @@ const indexStyles = {
   },
   subtext: {
     fontSize: "1.5rem",
-    maxWidth: "600px",
+    maxWidth: "700px",
     margin: "0.5rem 0", 
   },
 }
@@ -30,7 +30,7 @@ const IndexPage = () => (
       className="flex justify-center flex-col"
     >
       <div style={indexStyles.container}>
-        <h1 className="m-0  text-5xl text-white">
+        <h1 className="m-0  text-5xl sm:text-3xl text-gray-900 dark:text-white ">
           <Typed
             loop
             typeSpeed={80}
@@ -38,7 +38,7 @@ const IndexPage = () => (
             strings={[
               "I'm <span class='accent'>Faiyaz</span>.",
               "I'm a <span class='accent'>Full stack developer</span>.",
-              "I love <span class='accent'>Javascript</span>.",
+              "I love anything <span class='accent'>Javascript</span>.",
             ]}
             smartBackspace
             backDelay={1000}
@@ -48,8 +48,8 @@ const IndexPage = () => (
             className="typed"
           />
         </h1>
-        <p style={indexStyles.subtext} className="text-white leading-loose text-lg">
-          As a senior full stack developer with years of experience I create
+        <p style={indexStyles.subtext} className="text-gray-900 dark:text-white leading-loose text-lg">
+          As a senior full stack developer with 7 years of experience, I create
           amazing web apps to make the internet a better place.{" "}
           <strong>
             <Link to="/about/">Get in touch</Link>

@@ -3,12 +3,25 @@ import { ThemeToggler } from "gatsby-plugin-dark-mode"
 import { Switch } from "@headlessui/react"
 
 const CustomThemeToggler = () => {
-  const [enabled, setEnabled] = useState(false);
+  const [enabled, setEnabled] = useState(true);
   useEffect(() => {
-    setEnabled(true);
+    
     // todo: find a better solution to se default theme
-    window.__setPreferredTheme("dark")
+    // we need to store theme is local storage because layout is unmounted and mounted during page transitions
+    const selectedTheme = localStorage.getItem("theme");
+    if(selectedTheme === "dark"){
+      setEnabled(true);
+    }else{
+      setEnabled(false);
+    }
+    window.__setPreferredTheme(selectedTheme);
   },[])
+
+  useEffect(() => {
+    const theme = enabled ? "dark" : "light";
+    localStorage.setItem("theme", theme);
+  },[enabled])
+
   function onSwitchChange(isDark,toggleTheme) {
     toggleTheme(isDark ? "dark" : "light")
     setEnabled(isDark)

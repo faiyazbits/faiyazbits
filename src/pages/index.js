@@ -30,7 +30,7 @@ const IndexPage = () => (
       className="flex justify-center flex-col"
     >
       <div style={indexStyles.container}>
-        <h1 className="m-0  text-5xl sm:text-3xl text-gray-900 dark:text-white ">
+        <h1 className="m-0  text-5xl sm:text-3xl text-gray-900 dark:text-white  font-mono">
           <Typed
             loop
             typeSpeed={80}
@@ -48,7 +48,7 @@ const IndexPage = () => (
             className="typed"
           />
         </h1>
-        <p style={indexStyles.subtext} className="text-gray-900 dark:text-white leading-loose text-lg">
+        <p style={indexStyles.subtext} className="text-gray-900 dark:text-white leading-loose text-lg font-mono">
           As a senior full stack developer with 7 years of experience, I create
           amazing web apps to make the internet a better place.{" "}
           <strong>

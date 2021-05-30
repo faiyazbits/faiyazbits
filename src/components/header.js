@@ -25,7 +25,7 @@ const HeaderMenuItemMobile = React.memo(({ headerMenuName }) => {
     <Link
       activeClassName="bg-gray-700"
       to={`/${url}`}
-      className=" text-black dark:text-gray-300 hover:bg-gray-700 hover:text-white block px-3 py-2 rounded-md font-bold text-base font-mono tracking-wide"
+      className=" text-white dark:text-black hover:bg-gray-700 hover:text-white block px-3 py-2 rounded-md font-bold text-base font-mono tracking-wide"
     >
       {headerMenuName}
     </Link>
@@ -114,7 +114,7 @@ const Header = () => {
           leaveFrom="opacity-100 scale-100"
           leaveTo="opacity-0 scale-95"
         >
-          <div className="md:hidden z-50 bg-gray-700" id="mobile-menu">
+          <div className="md:hidden z-50 bg-gray-700 dark:bg-gray-300" id="mobile-menu">
             <div className="px-2 pt-2 pb-3 space-y-1 sm:px-3">
               {headerMenuNames.map((headerMenuName, i) => (
                 <HeaderMenuItemMobile headerMenuName={headerMenuName} key={i} />

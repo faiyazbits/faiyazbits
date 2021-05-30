@@ -6,6 +6,7 @@ const CustomThemeToggler = () => {
   const [enabled, setEnabled] = useState(false);
   useEffect(() => {
     setEnabled(true);
+    // todo: find a better solution to se default theme
     window._theme = "dark"
   },[])
   function onSwitchChange(isDark,toggleTheme) {

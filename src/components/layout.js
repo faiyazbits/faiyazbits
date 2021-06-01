@@ -25,10 +25,9 @@ const Layout = ({ children }) => {
 
   return (
     <>
-      <div className="flex flex-col min-h-screen relative">
+      <div className="flex flex-col justify-center w-screen h-screen m-0 text-center items-center">
         <Header />
-        <main className="z-10">{children}</main>
-
+        {children}
         <Footer />
         <ParticlesBackground />
       </div>

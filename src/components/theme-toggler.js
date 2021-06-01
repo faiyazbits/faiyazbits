@@ -6,8 +6,8 @@ const CustomThemeToggler = () => {
   const [enabled, setEnabled] = useState(true);
   useEffect(() => {
     
-    // todo: find a better solution to se default theme
-    // we need to store theme is local storage because layout is unmounted and mounted during page transitions
+    // todo: find a better solution to set default theme
+    // we need to store theme in local storage because layout component is unmounted and mounted during page transitions
     const selectedTheme = localStorage.getItem("theme");
     if(selectedTheme === "dark"){
       setEnabled(true);

@@ -1,16 +1,12 @@
 import React  from 'react';
 import { Particles as ReactParticles } from 'react-tsparticles';
 
-const particleContainerStyles = {
-  zIndex:-1
-}
-
 const Particles = () => {
 
   const OPTIONS = {
     particles: {
       number: {
-        value: 100,
+        value: 130,
         density: {
           enable: true,
           area: 800,
@@ -130,7 +126,7 @@ const Particles = () => {
   };
 
   return (
-    <div  style={particleContainerStyles} className="absolute bg-white dark:bg-black bg-no-repeat bg-cover bg-center">
+    <div className="absolute z-0 bg-white dark:bg-black bg-no-repeat bg-cover bg-center">
       <ReactParticles width='100vw' height='100vh' options={OPTIONS} />
     </div>
   );

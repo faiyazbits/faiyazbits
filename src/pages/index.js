@@ -7,12 +7,7 @@ import Layout from "../components/layout"
 import Seo from "../components/seo"
 
 const indexStyles = {
-  section: {
-    minHeight: "96vh",
-  },
   container: {
-    maxWidth: "94%",
-    width: "1140px",
     margin: "0px auto"
   },
   subtext: {
@@ -26,8 +21,7 @@ const IndexPage = () => (
   <Layout>
     <Seo title="Home" />
     <section
-      style={indexStyles.section}
-      className="flex justify-center flex-col"
+      className="flex justify-center flex-col z-10"
     >
       <div style={indexStyles.container}>
         <h1 className="m-0  text-5xl sm:text-3xl text-gray-900 dark:text-white  font-mono">
@@ -38,6 +32,7 @@ const IndexPage = () => (
             strings={[
               "I'm <span class='accent'>Faiyaz</span>.",
               "I'm a <span class='accent'>Full stack developer</span>.",
+              "I'm a <span class='accent'>Passionate trainer</span>.",
               "I love anything <span class='accent'>Javascript</span>.",
             ]}
             smartBackspace
@@ -49,7 +44,7 @@ const IndexPage = () => (
           />
         </h1>
         <p style={indexStyles.subtext} className="text-gray-900 dark:text-white leading-loose text-lg font-mono">
-          As a senior full stack developer with 7 years of experience, I create
+          As a senior full stack developer and trainer with 7 years of experience, I create
           amazing web apps to make the internet a better place.{" "}
           <strong>
             <Link to="/about/">Get in touch</Link>

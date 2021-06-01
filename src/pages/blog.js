@@ -8,7 +8,7 @@ const Blog = () => {
 
     <Layout>
     <Seo title="Blog" />
-    <div className="flex justify-center items-center flex-col z-10 w-full h-screen">
+    <div className="flex flex-col justify-center items-center  z-10">
       <p className="text-3xl text-white font-medium mb-3">Under construction</p>
       <StaticImage
         src="../images/under_construction.svg"

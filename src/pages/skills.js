@@ -9,7 +9,7 @@ const Skills = () => {
     <Layout>
     <Seo title="Skills" />
     <div className="flex justify-center items-center flex-col z-10">
-      <p className="text-3xl text-white font-medium mb-3">Under construction</p>
+      <p className="text-3xl text-black dark:text-white font-medium mb-3">Under construction</p>
       <StaticImage
         src="../images/under_construction.svg"
         layout="fixed"

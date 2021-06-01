@@ -1,0 +1,56 @@
+{
+    "languages": [
+        {
+            "name":"javascript",
+            "iconFile":"javascript.svg"
+        },
+        {
+            "name":"typescript",
+            "iconFile":"typescript.svg"
+        }
+    ],
+    "frontend": [
+        {
+            "name": "react",
+            "iconFile": "react.svg"
+        },
+        {
+            "name": "angular",
+            "iconFile": "angular.svg"
+        },
+        {
+            "name": "d3",
+            "iconFile": "d3.svg"
+        }
+    ],
+    "backend": [
+        {
+            "name": "nodejs",
+            "iconFile": "nodejs.svg"
+        }
+    ],
+    "databases": [
+        {
+            "name": "mongodb",
+            "iconFile": "mongodb.svg"
+        },
+        {
+            "name": "postgres",
+            "iconFile": "postgres.svg"
+        }
+    ],
+    "css": [
+        {
+            "name": "bootstrap",
+            "iconFile": "bootstrap.svg"
+        },
+        {
+            "name": "sass",
+            "iconFile": "sass.svg"
+        },
+        {
+            "name": "tailwind",
+            "iconFile": "tailwind.svg"
+        }
+    ]
+}

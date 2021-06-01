@@ -43,7 +43,7 @@ const IndexPage = () => (
             className="typed"
           />
         </h1>
-        <p style={indexStyles.subtext} className="text-gray-900 dark:text-white leading-loose text-lg font-mono">
+        <p style={indexStyles.subtext} className="text-gray-900 dark:text-white leading-loose text-lg font-mono text-justify">
           As a senior full stack developer and trainer with 7 years of experience, I create
           amazing web apps to make the internet a better place.{" "}
           <strong>

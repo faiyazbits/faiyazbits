@@ -24,7 +24,7 @@ const IndexPage = () => (
       className="flex justify-center flex-col z-10 p-5"
     >
       <div style={indexStyles.container}>
-        <h1 className="m-0  text-5xl sm:text-3xl xs:text-3xl text-gray-900 dark:text-white  font-mono">
+        <h1 className="m-0  text-5xl sm:text-3xl xs:text-l text-gray-900 dark:text-white  font-mono">
           <Typed
             loop
             typeSpeed={80}

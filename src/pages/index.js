@@ -21,10 +21,10 @@ const IndexPage = () => (
   <Layout>
     <Seo title="Home" />
     <section
-      className="flex justify-center flex-col z-10"
+      className="flex justify-center flex-col z-10 p-5"
     >
       <div style={indexStyles.container}>
-        <h1 className="m-0  text-5xl sm:text-3xl text-gray-900 dark:text-white  font-mono">
+        <h1 className="m-0  text-5xl sm:text-3xl xs:text-3xl text-gray-900 dark:text-white  font-mono">
           <Typed
             loop
             typeSpeed={80}
@@ -43,7 +43,7 @@ const IndexPage = () => (
             className="typed"
           />
         </h1>
-        <p style={indexStyles.subtext} className="text-gray-900 dark:text-white leading-loose text-lg font-mono text-justify">
+        <p style={indexStyles.subtext} className="text-gray-900 dark:text-white leading-loose sm:leading-relaxed text-lg font-mono text-justify">
           As a senior full stack developer and trainer with 7 years of experience, I create
           amazing web apps to make the internet a better place.{" "}
           <strong>

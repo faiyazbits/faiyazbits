@@ -21,6 +21,10 @@
         {
             "name": "d3",
             "iconFile": "d3.svg"
+        },
+        {
+            "name": "gastby",
+            "iconFile": "gastby.svg"
         }
     ],
     "backend": [
@@ -51,6 +55,22 @@
         {
             "name": "tailwind",
             "iconFile": "tailwind.svg"
+        }
+    ],
+    "version control": [
+        {
+            "name": "git",
+            "iconFile": "git.svg"
+        }
+    ],
+    "testing": [
+        {
+            "name": "jest",
+            "iconFile": "jest.svg"
+        },
+        {
+            "name": "cypress",
+            "iconFile": "cypress.svg"
         }
     ]
 }

@@ -10,28 +10,17 @@ import PropTypes from "prop-types"
 import ParticlesBackground from "./particle-background"
 import Footer from "./footer"
 import Header from "./header"
-// import { useStaticQuery, graphql } from "gatsby"
 
 const Layout = ({ children }) => {
-  /* const data = useStaticQuery(graphql`
-    query SiteTitleQuery {
-      site {
-        siteMetadata {
-          title
-        }
-      }
-    }
-  `) */
-
   return (
-    <>
-      <div className="flex flex-col justify-center w-screen h-screen m-0 text-center items-center">
-        <Header />
+    <div className="w-screen h-screen">
+      <Header />
+      <div className="absolute layout flex flex-col justify-center m-0 text-center items-center w-screen">
         {children}
-        <Footer />
-        <ParticlesBackground />
       </div>
-    </>
+      <Footer />
+      <ParticlesBackground/>
+    </div>
   )
 }
 

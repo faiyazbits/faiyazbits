@@ -7,15 +7,15 @@ function findSkillLevelColor(skill){
 }
 
 const SkillCard = ({ skill }) => {
-    const src  = `https://faiyazbits-images.s3.us-east-2.amazonaws.com/${skill.name.toLowerCase()}.png`;
+    const src  = `https://faiyazbits-images.s3.us-east-2.amazonaws.com/${skill.name.toLowerCase()}.svg`;
     const levelClassName = `px-4 py-4 bg-${findSkillLevelColor(skill)}-500`
   return (
-    <div className="max-w-xs mx-auto overflow-hidden bg-white rounded-lg shadow-lg">
+    <div className="overflow-hidden my-4 mr-4 bg-gray-900 dark:bg-white rounded-lg shadow-lg">
       <div className={levelClassName}>
       </div>
 
       <img
-        className="object-fill w-full h-48"
+        className="object-contain w-48 h-48"
         src={src}
         alt={skill.name}
       />

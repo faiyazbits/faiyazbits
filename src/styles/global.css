@@ -12,3 +12,20 @@
 * {
    @apply font-mono text-lg !important;
 }
+
+.layout {
+   top:72px;
+   left:0;
+   right:0;
+   height: calc(100vh - 72px);
+}
+
+div {
+   -ms-overflow-style: none; /* for Internet Explorer, Edge */
+   scrollbar-width: none; /* for Firefox */
+   overflow-y: scroll; 
+}
+
+div::-webkit-scrollbar {
+   display: none; /* for Chrome, Safari, and Opera */
+}

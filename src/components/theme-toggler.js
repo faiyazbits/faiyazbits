@@ -1,28 +1,27 @@
-import React,{useState,useEffect} from "react"
+import React, { useState, useEffect } from "react"
 import { ThemeToggler } from "gatsby-plugin-dark-mode"
 import { Switch } from "@headlessui/react"
 
 const CustomThemeToggler = () => {
-  const [enabled, setEnabled] = useState(true);
+  const [enabled, setEnabled] = useState(true)
   useEffect(() => {
-    
     // todo: find a better solution to set default theme
     // we need to store theme in local storage because layout component is unmounted and mounted during page transitions
-    const selectedTheme = localStorage.getItem("theme") || "dark";
-    if(selectedTheme === "dark"){
-      setEnabled(true);
-    }else{
-      setEnabled(false);
+    const selectedTheme = localStorage.getItem("theme") || "dark"
+    if (selectedTheme === "dark") {
+      setEnabled(true)
+    } else {
+      setEnabled(false)
     }
-    window.__setPreferredTheme(selectedTheme);
-  },[])
+    window.__setPreferredTheme(selectedTheme)
+  }, [])
 
   useEffect(() => {
-    const theme = enabled ? "dark" : "light";
-    localStorage.setItem("theme", theme);
-  },[enabled])
+    const theme = enabled ? "dark" : "light"
+    localStorage.setItem("theme", theme)
+  }, [enabled])
 
-  function onSwitchChange(isDark,toggleTheme) {
+  function onSwitchChange(isDark, toggleTheme) {
     toggleTheme(isDark ? "dark" : "light")
     setEnabled(isDark)
   }
@@ -34,8 +33,7 @@ const CustomThemeToggler = () => {
             <div className="flex items-center">
               <Switch
                 checked={enabled}
-                
-                onChange={(isDark) => onSwitchChange(isDark,toggleTheme)}
+                onChange={isDark => onSwitchChange(isDark, toggleTheme)}
                 className={`${
                   enabled ? "bg-gray-800" : "bg-gray-200"
                 } relative inline-flex items-center h-6 rounded-full w-11 transition-colors focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-indigo-500`}

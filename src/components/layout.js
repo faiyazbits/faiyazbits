@@ -19,7 +19,7 @@ const Layout = ({ children }) => {
         {children}
       </div>
       <Footer />
-      <ParticlesBackground/>
+      <ParticlesBackground />
     </div>
   )
 }

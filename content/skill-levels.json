@@ -1,17 +1,17 @@
 [
-    {
-        "type":"expert",
-        "level":"Expert",
-        "color":"green"
-    },
-    {
-        "type":"proficient",
-        "level":"Proficient",
-        "color":"yellow"
-    },
-    {
-        "type":"novice",
-        "level":"Novice",
-        "color":"blue"
-    }
+  {
+    "type": "expert",
+    "level": "Expert",
+    "color": "green"
+  },
+  {
+    "type": "proficient",
+    "level": "Proficient",
+    "color": "yellow"
+  },
+  {
+    "type": "novice",
+    "level": "Novice",
+    "color": "blue"
+  }
 ]

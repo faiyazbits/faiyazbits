@@ -10,7 +10,7 @@ const skillsStyles = {
   container: {
     margin: "0px auto",
     zIndex: 10,
-    overflow:'auto'
+    overflow: "auto",
   },
 }
 
@@ -24,9 +24,9 @@ const Skills = () => {
             <SkillLevelCard level={level} color={color} key={i} />
           ))}
         </div>
-        {
-          skills.map((s,i) => <SkillSection skills={s.skills} category={s.category} key={i}/> )
-        }
+        {skills.map((s, i) => (
+          <SkillSection skills={s.skills} category={s.category} key={i} />
+        ))}
       </div>
     </Layout>
   )

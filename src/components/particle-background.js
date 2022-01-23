@@ -1,5 +1,5 @@
-import React  from 'react';
-import { Particles as ReactParticles } from 'react-tsparticles';
+import React from "react"
+import { Particles as ReactParticles } from "react-tsparticles"
 
 const OPTIONS = {
   particles: {
@@ -11,19 +11,19 @@ const OPTIONS = {
       },
     },
     color: {
-      value: ['c912ed', '00bfff', '22dd22', 'ffd500', 'ff8000', 'ff2600'],
+      value: ["c912ed", "00bfff", "22dd22", "ffd500", "ff8000", "ff2600"],
     },
     shape: {
-      type: 'circle',
+      type: "circle",
       stroke: {
         width: 0,
-        color: '000',
+        color: "000",
       },
       polygon: {
         nb_sides: 5,
       },
       image: {
-        src: 'img/github.svg',
+        src: "img/github.svg",
         width: 100,
         height: 100,
       },
@@ -54,7 +54,7 @@ const OPTIONS = {
     links: {
       enable: true,
       distance: 75,
-      color: '999',
+      color: "999",
       opacity: 0.9,
       width: 1,
       consent: false,
@@ -63,10 +63,10 @@ const OPTIONS = {
     move: {
       enable: true,
       speed: 2,
-      direction: 'none',
+      direction: "none",
       random: false,
       straight: false,
-      out_mode: 'bounce',
+      out_mode: "bounce",
       bounce: false,
       attract: {
         enable: false,
@@ -76,15 +76,15 @@ const OPTIONS = {
     },
   },
   interactivity: {
-    detect_on: 'canvas',
+    detect_on: "canvas",
     events: {
       onhover: {
         enable: true,
-        mode: 'repulse',
+        mode: "repulse",
       },
       onclick: {
         enable: true,
-        mode: 'push',
+        mode: "push",
       },
       resize: true,
     },
@@ -121,18 +121,17 @@ const OPTIONS = {
   },
   retina_detect: true,
   fpsLimit: 60,
-};
+}
 
-const MemoizedParticles = React.memo(() => <ReactParticles width='100%' height='100%' options={OPTIONS} />)
+const MemoizedParticles = React.memo(() => (
+  <ReactParticles width="100%" height="100%" options={OPTIONS} />
+))
 const Particles = () => {
-
-  
-
   return (
     <div className="fixed top-0 right-0 bottom-0 left-0 z-0 bg-white dark:bg-black bg-no-repeat bg-cover bg-center">
       <MemoizedParticles />
     </div>
-  );
-};
+  )
+}
 
 export default Particles

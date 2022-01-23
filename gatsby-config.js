@@ -7,8 +7,8 @@ module.exports = {
   plugins: [
     `gatsby-plugin-react-helmet`,
     `gatsby-plugin-image`,
-    'gatsby-plugin-postcss',
-    'gatsby-plugin-dark-mode',
+    "gatsby-plugin-postcss",
+    "gatsby-plugin-dark-mode",
     {
       resolve: `gatsby-source-filesystem`,
       options: {
@@ -36,5 +36,3 @@ module.exports = {
     // `gatsby-plugin-offline`,
   ],
 }
-
-

@@ -1,9 +1,7 @@
 import React from "react"
 import SkillCard from "./skill-card"
 
-
-const SkillSection = ({ skills,category }) => {
-
+const SkillSection = ({ skills, category }) => {
   return (
     <div className="my-4 p-6">
       <div className="flex items-center justify-start">

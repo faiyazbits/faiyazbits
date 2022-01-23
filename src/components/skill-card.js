@@ -1,13 +1,29 @@
 import React from "react"
 import SkillLevels from "../../content/skill-levels.json"
+import { COLOR_MAP } from "./skill-level-card"
 
 function findSkillLevelColor(skill) {
   return SkillLevels.find(s => s.type === skill.level).color
 }
 
+function getColorName(color){
+  switch(color){
+    case 'green':
+      return COLOR_MAP.GREEN_DARK
+    case 'yellow':
+      return COLOR_MAP.YELLOW_DARK
+    case 'blue':
+      return COLOR_MAP.BLUE_DARK
+    default:
+      return COLOR_MAP.GREEN_DARK      
+  }
+}
+
 const SkillCard = ({ skill }) => {
   const src = `https://faiyazbits-images.s3.us-east-2.amazonaws.com/${skill.name.toLowerCase()}.svg`
-  const levelClassName = `px-4 py-4 bg-${findSkillLevelColor(skill)}-500`
+  const color = findSkillLevelColor(skill);
+  const colorClass =  getColorName(color)
+  const levelClassName = `px-4 py-4 ${colorClass}`
   return (
     <div className="overflow-hidden my-4 mr-4 bg-gray-900 dark:bg-white rounded-lg shadow-lg">
       <div className={levelClassName}></div>

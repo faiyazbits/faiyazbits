@@ -1,22 +1,25 @@
 import React from "react"
-import { StaticImage } from "gatsby-plugin-image"
 import Layout from "../components/layout"
 import Seo from "../components/seo"
+import SkillLevelCard from "../components/skill-level-card"
+import skillLevels from "../../content/skill-levels.json"
+
+const skillsStyles = {
+  container: {
+    margin: "0px auto",
+    zIndex:10
+  },
+}
 
 const Skills = () => {
   return (
 
     <Layout>
     <Seo title="Skills" />
-    <div className="flex justify-center items-center flex-col z-10">
-      <p className="text-3xl text-black dark:text-white font-medium mb-3">Under construction</p>
-      <StaticImage
-        src="../images/under_construction.svg"
-        layout="fixed"
-        width={400}
-        height={400}
-        alt="Under construction"
-      />
+    <div style={skillsStyles.container}>
+      <div className="flex flex-1 flex-col md:flex-row lg:flex-row mx-2">
+        {skillLevels.map(({level,color},i) => <SkillLevelCard level={level} color={color} key={i}/> )}
+      </div>
     </div>
   </Layout>
     

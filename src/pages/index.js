@@ -13,7 +13,8 @@ const indexStyles = {
   subtext: {
     maxWidth: "700px",
     margin: "0.5rem 0", 
-    textAlign:"initial"
+    textAlign:"initial",
+    lineHeight:"initial",
   },
 }
 

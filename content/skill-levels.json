@@ -1,0 +1,14 @@
+[
+    {
+        "level":"Expert",
+        "color":"green"
+    },
+    {
+        "level":"Proficient",
+        "color":"yellow"
+    },
+    {
+        "level":"Novice",
+        "color":"blue"
+    }
+]

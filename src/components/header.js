@@ -58,7 +58,7 @@ const Header = () => {
               </div>
             </div>
             <CustomThemeToggler/>
-            <div className="-mr-2 flex md:hidden">
+            <div className="flex md:hidden">
               <button
                 type="button"
                 onClick={() => setIsOpen(!isOpen)}

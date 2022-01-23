@@ -1,76 +1,112 @@
-{
-    "languages": [
-        {
-            "name":"javascript",
-            "iconFile":"javascript.svg"
-        },
-        {
-            "name":"typescript",
-            "iconFile":"typescript.svg"
-        }
-    ],
-    "frontend": [
-        {
-            "name": "react",
-            "iconFile": "react.svg"
-        },
-        {
-            "name": "angular",
-            "iconFile": "angular.svg"
-        },
-        {
-            "name": "d3",
-            "iconFile": "d3.svg"
-        },
-        {
-            "name": "gastby",
-            "iconFile": "gastby.svg"
-        }
-    ],
-    "backend": [
-        {
-            "name": "nodejs",
-            "iconFile": "nodejs.svg"
-        }
-    ],
-    "databases": [
-        {
-            "name": "mongodb",
-            "iconFile": "mongodb.svg"
-        },
-        {
-            "name": "postgres",
-            "iconFile": "postgres.svg"
-        }
-    ],
-    "css": [
-        {
-            "name": "bootstrap",
-            "iconFile": "bootstrap.svg"
-        },
-        {
-            "name": "sass",
-            "iconFile": "sass.svg"
-        },
-        {
-            "name": "tailwind",
-            "iconFile": "tailwind.svg"
-        }
-    ],
-    "version control": [
-        {
-            "name": "git",
-            "iconFile": "git.svg"
-        }
-    ],
-    "testing": [
-        {
-            "name": "jest",
-            "iconFile": "jest.svg"
-        },
-        {
-            "name": "cypress",
-            "iconFile": "cypress.svg"
-        }
-    ]
-}
+[
+    {
+        "category":"Languages",
+        "skills": [
+            {
+                "name":"Javascript",
+                "iconFile":"javascript.svg",
+                "level":"expert"
+            },
+            {
+                "name":"Typescript",
+                "iconFile":"typescript.svg",
+                "level":"expert"
+            }
+        ]
+    },
+    {
+        "category":"Frontend",
+        "skills": [
+            {
+                "name": "React",
+                "iconFile": "react.svg",
+                "level":"proficient"
+            },
+            {
+                "name": "Angular",
+                "iconFile": "angular.svg",
+                "level":"expert"
+            },
+            {
+                "name": "d3",
+                "iconFile": "d3.svg",
+                "level":"novice"
+            },
+            {
+                "name": "Gastby",
+                "iconFile": "gastby.svg",
+                "level":"novice"
+            }
+        ]
+    },
+    {
+        "category":"Backend",
+        "skills": [
+            {
+                "name": "Nodejs",
+                "iconFile": "nodejs.svg",
+                "level":"proficient"
+            }
+        ]
+    },
+    {
+        "category":"Databases",
+        "skills": [
+            {
+                "name": "Mongodb",
+                "iconFile": "mongodb.svg",
+                "level":"proficient"
+            },
+            {
+                "name": "Postgres",
+                "iconFile": "postgres.svg",
+                "level":"novice"
+            }
+        ]
+    },
+    {
+        "category":"Css",
+        "skills": [
+            {
+                "name": "Bootstrap",
+                "iconFile": "bootstrap.svg",
+                "level":"proficient"
+            },
+            {
+                "name": "Sass",
+                "iconFile": "sass.svg",
+                "level":"proficient"
+            },
+            {
+                "name": "Tailwind",
+                "iconFile": "tailwind.svg",
+                "level":"proficient"
+            }
+        ]
+    },
+    {
+        "category":"Version control",
+        "skills": [
+            {
+                "name": "Git",
+                "iconFile": "git.svg",
+                "level":"expert"
+            }
+        ]
+    },
+    {
+        "category":"Testing",
+        "skills": [
+            {
+                "name": "Jest",
+                "iconFile": "jest.svg",
+                "level":"proficient"
+            },
+            {
+                "name": "Cypress",
+                "iconFile": "cypress.svg",
+                "level":"expert"
+            }
+        ]
+    }
+]

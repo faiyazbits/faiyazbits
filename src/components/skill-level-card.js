@@ -1,18 +1,18 @@
 import React from "react"
 
 export const COLOR_MAP = {
-  GREEN_LIGHT: 'bg-green-400',
-  YELLOW_LIGHT: 'bg-yellow-400',
-  BLUE_LIGHT: 'bg-blue-400',
-  BLUE_DARK: 'bg-blue-400',
-  GREEN_DARK: 'bg-green-400',
-  YELLOW_DARK: 'bg-yellow-400',
-  HOVER_GREEN: 'hover:bg-green-500',
-  HOVER_YELLOW: 'hover:bg-yellow-500',
-  HOVER_BLUE: 'hover:bg-blue-500',
-  BORDER_GREEN: 'border-green-500',
-  BORDER_BLUE: 'border-blue-500',
-  BORDER_YELLOW: 'border-yellow-500',
+  GREEN_LIGHT: 'bg-green-600',
+  YELLOW_LIGHT: 'bg-yellow-600',
+  BLUE_LIGHT: 'bg-blue-600',
+  BLUE_DARK: 'bg-blue-600',
+  GREEN_DARK: 'bg-green-600',
+  YELLOW_DARK: 'bg-yellow-600',
+  HOVER_GREEN: 'hover:bg-green-800',
+  HOVER_YELLOW: 'hover:bg-yellow-800',
+  HOVER_BLUE: 'hover:bg-blue-800',
+  BORDER_GREEN: 'border-green-800',
+  BORDER_BLUE: 'border-blue-800',
+  BORDER_YELLOW: 'border-yellow-800',
 }
 
 export function getColorNameCombo(color){

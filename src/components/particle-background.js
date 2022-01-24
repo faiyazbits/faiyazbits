@@ -128,7 +128,7 @@ const MemoizedParticles = React.memo(() => (
 ))
 const Particles = () => {
   return (
-    <div className="fixed top-0 right-0 bottom-0 left-0 z-0 bg-white dark:bg-black bg-no-repeat bg-cover bg-center">
+    <div className="fixed top-0 right-0 bottom-0 left-0 z-0 bg-white dark:bg-black bg-no-repeat bg-cover bg-center w-screen h-screen">
       <MemoizedParticles />
     </div>
   )

@@ -15,7 +15,7 @@ const Layout = ({ children }) => {
   return (
     <div className="w-screen h-screen">
       <Header />
-      <div className="absolute layout flex flex-col justify-center m-0 text-center items-center w-screen">
+      <div className="absolute layout flex flex-col justify-center m-0 text-center items-center w-screen overflow-y-scroll">
         {children}
       </div>
       <Footer />

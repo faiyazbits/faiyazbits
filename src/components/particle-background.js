@@ -4,7 +4,7 @@ import { Particles as ReactParticles } from "react-tsparticles"
 const OPTIONS = {
   particles: {
     number: {
-      value: 130,
+      value: 100,
       density: {
         enable: true,
         area: 800,

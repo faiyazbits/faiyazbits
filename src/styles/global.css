@@ -10,7 +10,7 @@
 @import url('https://unpkg.com/pattern.css');
 
 * {
-   @apply font-mono text-lg !important;
+   @apply font-mono  !important;
 }
 
 .layout {
@@ -34,3 +34,7 @@ div::-webkit-scrollbar {
    width: 100vw;
    height: 100vh;
 }
+
+html {
+   scroll-behavior: smooth;
+ }

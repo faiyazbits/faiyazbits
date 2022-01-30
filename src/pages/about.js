@@ -1,23 +1,23 @@
 import React from "react"
-import { StaticImage } from "gatsby-plugin-image"
 import Layout from "../components/layout"
 import Seo from "../components/seo"
+import AboutHero from "../components/about-hero"
+import AboutContent from "../components/about-content"
 
+const Styles = {
+  container: {
+    margin: "0px auto",
+    zIndex: 10,
+    overflow: "auto",
+  },
+}
 const About = () => {
   return (
     <Layout>
       <Seo title="About" />
-      <div className="flex justify-center items-center flex-col z-10">
-        <p className="text-3xl text-black dark:text-white font-medium mb-3">
-          Under construction
-        </p>
-        <StaticImage
-          src="../images/under_construction.svg"
-          layout="fixed"
-          width={400}
-          height={400}
-          alt="Under construction"
-        />
+      <div style={Styles.container}>
+        <AboutHero />
+        <AboutContent />
       </div>
     </Layout>
   )

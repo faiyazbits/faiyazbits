@@ -1,7 +1,5 @@
 import * as React from "react"
 import Typed from "react-typed"
-import { Link } from "gatsby"
-// import { StaticImage } from "gatsby-plugin-image"
 
 import Layout from "../components/layout"
 import Seo from "../components/seo"
@@ -49,10 +47,6 @@ const IndexPage = () => (
           As a senior full stack developer and trainer with 7 years of
           experience, I create amazing web apps to make the internet a better
           place.{"    "}
-          <strong>
-            <Link to="/about/">Get in touch</Link>
-          </strong>{" "}
-          to discuss how we can work together.
         </p>
       </div>
     </section>

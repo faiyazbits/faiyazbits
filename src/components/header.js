@@ -5,7 +5,7 @@ import { Link } from "gatsby"
 import { StaticImage } from "gatsby-plugin-image"
 import CustomThemeToggler from "./theme-toggler"
 
-const headerMenuNames = ["Skills", "Portfolio", "Blog", "About"]
+const headerMenuNames = ["Skills", "Portfolio", "Blog"]
 const HeaderMenuItem = React.memo(({ headerMenuName }) => {
   const url = headerMenuName.toLowerCase()
   return (

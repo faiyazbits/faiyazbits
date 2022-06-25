@@ -25,7 +25,7 @@ const SkillCard = ({ skill }) => {
   const colorClass =  getColorName(color)
   const levelClassName = `px-4 py-4 ${colorClass}`
   return (
-    <div className="overflow-hidden my-4 mr-4 bg-gray-900 dark:bg-white rounded-lg shadow-lg">
+    <div className="overflow-hidden my-4 mr-4 bg-white rounded-lg shadow-lg">
       <div className={levelClassName}></div>
 
       <img className="object-contain w-48 h-48" src={src} alt={skill.name} />

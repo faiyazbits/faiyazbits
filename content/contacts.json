@@ -1,0 +1,17 @@
+[
+    {
+        "name": "mail",
+        "logo": "mail.svg",
+        "href": "mailto:m.faiyazuddeen@gmail.com"
+    },
+    {
+        "name": "github",
+        "logo": "github.svg",
+        "href": "https://github.com/faiyazbits"
+    },
+    {
+        "name": "twitter",
+        "logo": "twitter.svg",
+        "href": "https://twitter.com/faiyazbits"
+    }
+]

@@ -3,6 +3,7 @@ import Typed from "react-typed"
 
 import Layout from "../components/layout"
 import Seo from "../components/seo"
+import Contacts from "../components/contacts"
 
 const indexStyles = {
   container: {
@@ -48,6 +49,7 @@ const IndexPage = () => (
           experience, I create amazing web apps to make the internet a better
           place.{"    "}
         </p>
+        <Contacts/>
       </div>
     </section>
   </Layout>

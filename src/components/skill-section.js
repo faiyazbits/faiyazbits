@@ -5,7 +5,7 @@ const SkillSection = ({ skills, category }) => {
   return (
     <div className="my-4 p-6">
       <div className="flex items-center justify-start">
-        <span className="bg-indigo-500 px-4 py-2  text-left text-gray-900 dark:text-white font-mono font-semibold text-lg w-full">
+        <span className="bg-gray-900 dark:bg-white px-4 py-2  text-left text-white dark:text-gray-900 font-mono font-semibold text-lg w-full">
           {category}
         </span>
       </div>

@@ -11,6 +11,16 @@
         "name": "Typescript",
         "iconFile": "typescript.svg",
         "level": "expert"
+      },
+      {
+        "name": "Kotlin",
+        "iconFile": "kotlin.svg",
+        "level": "novice"
+      },
+      {
+        "name": "Java",
+        "iconFile": "java.svg",
+        "level": "novice"
       }
     ]
   },
@@ -46,6 +56,11 @@
         "name": "Nodejs",
         "iconFile": "nodejs.svg",
         "level": "proficient"
+      },
+      {
+        "name": "Spring",
+        "iconFile": "spring.svg",
+        "level": "novice"
       }
     ]
   },
